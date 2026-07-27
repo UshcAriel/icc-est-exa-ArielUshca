@@ -1,18 +1,12 @@
-## Getting Started
+## Explicacion del metodo A
+Use el comparator para ordenar segun los criterios sobreescribiendo el metodo para que ordene las categorias que queria siendo estas (workload) y (ProjectCode) descendente y ascendente
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Luego utilize un TreeSet para eliminar duplicados  y la condicion (projects == null) en caso las lista sea nula retorne filter y no nos salte un error 
 
-## Folder Structure
+Por ultimo utilice un for para recorrer la lista y ver elemento por elemento cual cumplia el (minimunWorkload) para ser agregado en el filter
 
-The workspace contains two folders by default, where:
+## Metodo classifyAndExtractProjects
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+En este metodo utilize un HashMap porque nos permite utilizar (Clave, valor) para ordenar la lista una forma de clasificar segun lo pedido
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Luego utilize un for para recorrer la lista y categorizarla segun los criterios
